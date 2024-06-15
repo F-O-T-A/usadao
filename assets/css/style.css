@@ -26,8 +26,10 @@ body{
     clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
 }
 .text-container{
-    width: 50%;
+    width: 65%;
+    position: absolute;
 }
+
 
 @media (max-width: 768px) {
     .clip{
@@ -38,4 +40,5 @@ body{
         width: 100%;
         position: relative !important;
     }
+    
   }
