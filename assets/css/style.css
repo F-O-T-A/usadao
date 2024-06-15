@@ -29,7 +29,9 @@ body{
     width: 65%;
     position: absolute;
 }
-
+.fit{
+    width: 75% !important;
+}
 
 @media (max-width: 768px) {
     .clip{
@@ -40,5 +42,7 @@ body{
         width: 100%;
         position: relative !important;
     }
-    
+    .fit{
+        width: 100% !important;
+    }
   }
