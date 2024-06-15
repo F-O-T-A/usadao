@@ -22,3 +22,20 @@ body{
 .bg-danger{
     background-color: #B80000 !important;
 }
+.clip{
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+}
+.text-container{
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .clip{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        width: 100%;
+    }
+    .text-container{
+        width: 100%;
+        position: relative !important;
+    }
+  }
