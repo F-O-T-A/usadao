@@ -26,13 +26,33 @@ body{
     clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
 }
 .text-container{
-    width: 65%;
+    width: 60%;
     position: absolute;
 }
 .fit{
-    width: 75% !important;
+    width: 60% !important;
 }
-
+.service-card{
+    width: 85px;
+    height: 85px;
+}
+.service-card > p{
+    font-size: 10pt;
+}
+.carousel-custom{
+    height: 50px;
+    display: flex;
+    overflow-x: hidden;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+}
+.carousel-custom div{
+    width: 150px;
+    height: 100%;
+    text-align: center;
+    scroll-snap-align: start;
+    flex: none;
+}
 @media (max-width: 768px) {
     .clip{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
