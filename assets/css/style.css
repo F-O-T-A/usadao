@@ -1,0 +1,92 @@
+:root{
+    --primary-color : #B80000;
+    --white-color : #fff;
+    --radius-primary : 10px;
+    --padding-x : 25px;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.active{
+    color: var(--primary-color) !important;
+}
+
+.bg-danger{
+    background-color: #B80000 !important;
+}
+.clip{
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+}
+.text-container{
+    width: 60%;
+    position: absolute;
+}
+.fit{
+    width: 60% !important;
+}
+.service-card{
+    width: 85px;
+    height: 85px;
+}
+.service-card > p{
+    font-size: 10pt;
+}
+.carousel-custom{
+    height: 50px;
+    display: flex;
+    overflow-x: hidden;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+}
+.carousel-custom div{
+    width: 150px;
+    height: 100%;
+    text-align: center;
+    scroll-snap-align: start;
+    flex: none;
+}
+.carousel-images{
+    height: 350px;
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+}
+.carousel-images > div{
+    height: 100%;
+    text-align: center;
+    scroll-snap-align: start;
+    flex: none;
+}
+.fit-contact{
+    width: 50%;
+    height: 350px;
+}
+@media (max-width: 768px) {
+    .clip{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        width: 100%;
+    }
+    .text-container{
+        width: 100%;
+        position: relative !important;
+    }
+    .fit{
+        width: 100% !important;
+    }
+    .carousel-images{
+        height: 150px;
+    }
+    .fit-contact{
+        width: 100%;
+        height: 250px;
+    }
+  }
