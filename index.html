@@ -23,8 +23,13 @@
       crossorigin="anonymous"
     ></script>
     <title>Usadão da informatica</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-smooth-scroll="true" data-bs-root-margin="0px 0px 10%">
     <nav class="navbar navbar-expand-lg bg-white sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -41,10 +46,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarScroll">
           <ul class="nav navbar-nav w-100 justify-content-end">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">Sobre nós</a>
@@ -52,6 +57,10 @@
             <li class="nav-item">
               <a class="nav-link" href="#services">Serviços</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#suport">Assistência</a>
+            </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#contacts">Contatos</a>
             </li>
@@ -81,10 +90,9 @@
           alt="imagem da fachada"
           class="fit-hero position-relative z-0"
         />
-
       </div>
     </div>
-    <div class="w-100" id="about">
+    <div class="w-100 h-auto" id="about" tabindex="0">
       <div class="container text-center p-4">
         <span class="text-black-50">Sobre nós</span>
         <h1 class="fs-3">Qualidade e Confiabilidade</h1>
@@ -212,7 +220,7 @@
         </button>
       </div>
     </div>
-    <div class="w-100 bg-danger mt-4">
+    <div class="w-100 bg-danger mt-4" id="suport">
       <div class="container p-4 d-flex flex-column text-white">
         <div class="w-100 text-center">
           <span class="text-white-50">Suporte</span>
@@ -222,9 +230,9 @@
           <div class="w-100 h-75 text-md-start text-center">
             <p>
               Nossa equipe está pronta para ajudar! Se você tiver dúvidas ou
-          precisar de recomendações, nosso suporte especializado está à
-          disposição para fornecer a melhor assistência possível. Entre em
-          contato conosco e faça a escolha certa em eletrônicos.
+              precisar de recomendações, nosso suporte especializado está à
+              disposição para fornecer a melhor assistência possível. Entre em
+              contato conosco e faça a escolha certa em eletrônicos.
             </p>
           </div>
           <img
@@ -307,12 +315,12 @@
         </div>
       </div>
     </div>
-    <div class="w-100" id="contects">
+    <div class="w-100" id="contacts">
       <div class="container text-center p-4">
         <span class="text-black-50">Contatos</span>
         <h1 class="fs-3">Nossos Contatos e Localização</h1>
         <div class="w-100 d-flex flex-column-reverse flex-md-row mt-4">
-          <div class="fit-contact mt-md-0 mt-4">
+          <div class="fit-contact mt-md-0 mt-5">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.6887077858764!2d-56.09021448847665!3d-15.60827211833879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939db1ea6d46e513%3A0xfbcf986fbf4cc7f1!2zVXNhZMOjbyBJbmZvcm3DoXRpY2E!5e0!3m2!1spt-BR!2sbr!4v1718548091980!5m2!1spt-BR!2sbr"
               style="border: 0"
@@ -337,8 +345,8 @@
               <span class="text-black-50 small">Contatos</span>
               <h1 class="fs-6">Nossos contatos</h1>
               <small class="text-black">Telefones</small>
-              <small>(65) 3623-1828</small>
-              <small>(65) 3028-3668</small>
+              <small><a href="tel:(65) 3623-1828">(65) 3623-1828</a></small>
+              <small><a href="tel:(65) 3028-3668">(65) 3028-3668</a></small>
             </div>
           </div>
         </div>

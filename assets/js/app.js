@@ -17,3 +17,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
     scrollCarousel();
 });
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function isActiveView() {
+    const links = document.querySelectorAll('.nav-link');
+    links.forEach(link => {
+        const href = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(href);
+
+        if (targetElement && isElementInViewport(targetElement)) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+}
+
+document.addEventListener('scroll', isActiveView);
