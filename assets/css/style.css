@@ -132,9 +132,15 @@ body{
 .fit-suport{
     width: 50%;
 }
+.fit-hero{
+    height: 100%;
+}
 @media (max-width: 768px) {
     .clip{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        width: 100%;
+    }
+    .fit-hero{
         width: 100%;
     }
     .text-container{
